@@ -92,8 +92,8 @@ span {
     position: relative;
 }
 
-/* подчеркивание header навигация */
-.link-navigation::after {
+/* corrent - header подчеркивание текста текушей страницы */
+.corrent::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -102,20 +102,12 @@ span {
     left: 0;
     background-color: #4D5AE5;
     border-radius: 2px;
-    opacity: 0;
-}
-
-.link-navigation:hover:after {
-    opacity: 1;
 }
 
 
 li:last-child {
     margin-right: 0px;
 }
-
-/* подсветка текушей страницы */
-.nav-corrent { color: var(--primary-text-color)} 
 
 /* contact меил и телефон */
 .contact {
