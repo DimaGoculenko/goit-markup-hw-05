@@ -504,8 +504,27 @@ li .portfolio-link {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.list-item {
+    position: relative;
+}
+
 .list:nth-last-child(-n + 3) {
     margin: 0;
+}
+
+/* p slogan text */
+.slogan-text {
+    position: absolute;
+    top: 40px;
+    left: 32px;
+    width: 296px;
+    height: 96px;
+    content: "";
+    opacity: 0;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
 }
 
 /* H3 ---- subtitle */
@@ -522,4 +541,28 @@ li .portfolio-link {
     line-height: 24px;
     margin-left: 16px;
     margin-bottom: 32px; 
+}
+
+
+/* -----overflow------ */
+.list-item::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 300px;
+    background-color: rgb(77, 90, 229);
+    opacity: 0;
+    /* background-blend-mode: soft-light;
+    mix-blend-mode: normal;  */
+}
+
+.list-item:hover:before {
+    opacity: 1;
+}
+
+.slogan-text:hover {
+    opacity: 1;
 }
