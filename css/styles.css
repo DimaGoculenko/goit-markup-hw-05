@@ -601,10 +601,6 @@ li .portfolio-link {
     visibility: hidden;
 }
 
-/* .backdrop:hover {
-    opacity: 1;
-} */
-
 /* modal модельное окно */
 .backdrop-modal::before {
     position: absolute;
