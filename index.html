@@ -51,7 +51,7 @@
     <main>
         <section class="section-block">
             <h1 class="title">Effective Solutions <br> for Your Business</h1>
-            <button class="button-main" type="button">Order Service</button>
+            <button data-modal-open class="button-main" type="button">Order Service</button>
         </section>
 
 <!-- Section 1 -->
@@ -361,15 +361,16 @@
     </footer>
 
     <!-- backdrop -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="backdrop-modal">
-            <a class="icon-modal" href="">
+            <button class="icon-modal" data-modal-close>
                 <svg width="8px" height="8px">
                     <use href="./images/icons.svg#icon-VectorX"></use>
                 </svg>
-            </a>
+            </button>
         </div>
     </div>
 
+    <script src="./js/modal.js"></script>
 </body>
 </html>
