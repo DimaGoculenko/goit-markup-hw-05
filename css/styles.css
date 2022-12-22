@@ -104,6 +104,11 @@ span {
     border-radius: 2px;
 }
 
+/* corrent - header выделение (цвет) текста текушей страницы */
+.corrent {
+    color: #4D5AE5;
+}
+
 
 li:last-child {
     margin-right: 0px;
