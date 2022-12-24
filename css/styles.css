@@ -90,6 +90,7 @@ span {
 .link-navigation {
     margin-right: 40px;
     position: relative;
+    transform: var(--primary-text-color);
 }
 
 /* corrent - header подчеркивание текста текушей страницы */
