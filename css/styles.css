@@ -43,6 +43,7 @@ body {
 a {
     text-decoration: none;
     color: var(--color-body-text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* hover/:focus/:active */
@@ -90,7 +91,6 @@ span {
 .link-navigation {
     margin-right: 40px;
     position: relative;
-    transform: var(--primary-text-color);
 }
 
 /* corrent - header подчеркивание текста текушей страницы */
@@ -124,6 +124,7 @@ li:last-child {
 .contact-list {
     font-weight: 400;
     margin-right: 40px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-list:hover {
@@ -171,6 +172,7 @@ button {
     color: var(--primary-fon-color);
     cursor: pointer;
     font-weight: 600;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover,
@@ -369,7 +371,7 @@ button:focus {
 .customers {
     display: flex;
     justify-content: center;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 
 .item-customers {
@@ -469,6 +471,7 @@ button:focus {
     justify-content: center;
     padding-top: 96px;
     padding-bottom: 72px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .li-button:hover {
@@ -596,12 +599,6 @@ li .portfolio-link {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
-
 /* modal модельное окно */
 .modal {
     position: absolute;
@@ -614,8 +611,19 @@ li .portfolio-link {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
 
 .icon-modal {
     position: absolute;
